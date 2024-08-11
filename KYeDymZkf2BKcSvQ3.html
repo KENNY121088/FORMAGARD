@@ -1,0 +1,206 @@
+<html><head><base href="https://le-dressing-dalinnah.com/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Dressing d'Alinnah - Vêtements d'occasion pour filles de 6 à 8 ans</title>
+    <meta name="description" content="Découvrez des styles uniques, adorables et abordables pour les filles de 6 à 8 ans, soigneusement sélectionnés par Alinnah elle-même !">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pastel-pink: #FFB6C1;
+            --sky-blue: #87CEEB;
+            --soft-yellow: #FFFFE0;
+            --main-font: 'Lato', sans-serif;
+            --accent-font: 'Pacifico', cursive;
+        }
+        
+        body {
+            font-family: var(--main-font);
+            margin: 0;
+            padding: 0;
+            background-color: #FFF;
+            color: #333;
+        }
+        
+        header {
+            background-color: var(--pastel-pink);
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--accent-font);
+            font-size: 2rem;
+            color: #FFF;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        }
+        
+        nav ul li a {
+            color: #FFF;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        nav ul li a:hover {
+            color: var(--soft-yellow);
+        }
+        
+        .search-cart {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .banner {
+            background-color: var(--sky-blue);
+            color: #FFF;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        
+        .banner h1 {
+            font-family: var(--accent-font);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .featured-categories {
+            display: flex;
+            justify-content: space-around;
+            padding: 2rem 1rem;
+        }
+        
+        .category {
+            text-align: center;
+        }
+        
+        .category img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-button {
+            background-color: var(--pastel-pink);
+            color: #FFF;
+            padding: 0.5rem 1rem;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            background-color: #FF69B4;
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                padding: 0;
+            }
+            
+            .featured-categories {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/" class="logo">Le Dressing d'Alinnah</a>
+        <nav>
+            <ul>
+                <li><a href="/">Accueil</a></li>
+                <li><a href="/boutique">Boutique</a></li>
+                <li><a href="/nouveautes">Nouveautés</a></li>
+                <li><a href="/promotions">Promotions</a></li>
+                <li><a href="/a-propos">À propos</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="search" placeholder="Rechercher...">
+            <a href="/panier"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg></a>
+        </div>
+    </header>
+    
+    <main>
+        <section class="banner">
+            <h1>Des trésors de mode pour les petites fashionistas !</h1>
+            <p>Découvrez notre collection unique de vêtements d'occasion pour filles de 6 à 8 ans</p>
+            <button class="cta-button">Découvrez la Collection</button>
+        </section>
+        
+        <section class="featured-categories">
+            <div class="category">
+                <img src="robes-jupes.jpg" alt="Une sélection colorée de robes et jupes pour filles, style vintage et moderne" width="200" height="200">
+                <h2>Robes & Jupes</h2>
+                <p>Vêtements pour toutes les occasions</p>
+                <button class="cta-button">Voir la Collection</button>
+            </div>
+            <div class="category">
+                <img src="tops-tshirts.jpg" alt="Assortiment de tops et t-shirts colorés pour filles, motifs ludiques et tendance" width="200" height="200">
+                <h2>Tops & T-shirts</h2>
+                <p>Sélection de hauts colorés et tendance</p>
+                <button class="cta-button">Explorer</button>
+            </div>
+            <div class="category">
+                <img src="accessoires.jpg" alt="Variété d'accessoires mignons pour filles : chapeaux, sacs et chaussures" width="200" height="200">
+                <h2>Accessoires</h2>
+                <p>Chapeaux, sacs, chaussures</p>
+                <button class="cta-button">Découvrir</button>
+            </div>
+        </section>
+    </main>
+    
+    <script>
+        // Animation simple pour les boutons CTA
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.transform = 'scale(1.1)';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Carrousel d'images (à implémenter)
+        // Ici, vous pouvez ajouter un script pour créer un carrousel d'images
+        // pour la bannière principale, en utilisant une bibliothèque comme Swiper.js
+        
+        // Exemple de fonction pour ajouter des produits au panier
+        function addToCart(productId) {
+            // Logique pour ajouter un produit au panier
+            console.log(`Produit ${productId} ajouté au panier`);
+            // Mise à jour de l'icône du panier
+            // Animation de confirmation
+        }
+        
+        // Fonction pour la recherche (à implémenter)
+        function searchProducts() {
+            // Logique de recherche de produits
+        }
+    </script>
+</body>
+</html>
