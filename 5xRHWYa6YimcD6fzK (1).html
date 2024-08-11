@@ -1,0 +1,179 @@
+<html><head><base href="https://websim.example.com/formation-gardien-immeuble/%20enlever%20tarif%20mettre%20sur%20l'ent%C3%AAte%20le%20nom%20de%20la%20formation%20FORMA-GARD%20enlever%20programme%20et%20replacer%20s'inscrire%20par%20commecer%20maintenant">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMA-GARD - Formation en ligne de Gardien d'Immeuble</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy: #001f3f;
+            --white: #ffffff;
+            --light-gray: #f8f9fa;
+            --accent: #0056b3;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-gray);
+            color: var(--navy);
+        }
+        header {
+            background-color: var(--navy);
+            color: var(--white);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+        }
+        nav {
+            background-color: var(--white);
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 1rem;
+        }
+        nav ul li a {
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: var(--navy);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--accent);
+            color: var(--white);
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-weight: 500;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #004080;
+            transform: translateY(-2px);
+        }
+        .hero {
+            background: linear-gradient(rgba(0, 31, 63, 0.8), rgba(0, 31, 63, 0.8)), url('https://websim.example.com/images/building-management.jpg');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+            margin-bottom: 2rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--white);
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        .feature {
+            background-color: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="https://websim.example.com/formation-gardien-immeuble/" class="logo">FORMA-GARD</a>
+        <a href="https://websim.example.com/formation-gardien-immeuble/login" class="btn">Se connecter</a>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://websim.example.com/formation-gardien-immeuble/">Accueil</a></li>
+            <li><a href="https://websim.example.com/formation-gardien-immeuble/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <h1>Devenez un Gardien d'Immeuble Certifié</h1>
+        <p>Formation en ligne complète et interactive</p>
+        <a href="https://websim.example.com/formation-gardien-immeuble/commencer" class="btn">Commencer maintenant</a>
+    </div>
+    <main>
+        <h2>Pourquoi choisir notre formation ?</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🏢</div>
+                <h3>Expertise du métier</h3>
+                <p>Formez-vous avec des professionnels expérimentés du secteur immobilier.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💻</div>
+                <h3>100% en ligne</h3>
+                <p>Apprenez à votre rythme, où que vous soyez, quand vous voulez.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🏆</div>
+                <h3>Certification reconnue</h3>
+                <p>Obtenez une certification valorisée par les employeurs du secteur.</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤝</div>
+                <h3>Support personnalisé</h3>
+                <p>Bénéficiez d'un suivi individuel tout au long de votre formation.</p>
+            </div>
+        </div>
+    </main>
+    <script>
+        // Animation simple pour les features au défilement
+        document.addEventListener('DOMContentLoaded', function() {
+            const features = document.querySelectorAll('.feature');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            });
+
+            features.forEach(feature => {
+                feature.style.opacity = 0;
+                feature.style.transform = 'translateY(20px)';
+                feature.style.transition = 'opacity 0.5s, transform 0.5s';
+                observer.observe(feature);
+            });
+        });
+    </script>
+</body>
+</html>
